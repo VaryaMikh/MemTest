@@ -1,0 +1,14 @@
+button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	border: 0;
+
+	background-color: var(--c-blue-light);
+}
+
+button:hover {
+	background-color: var(--c-blue-dark)
+}

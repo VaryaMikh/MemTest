@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Какой ты мем?</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="og:title" content="Какой ты мем?">
+	<meta name="og:description" content="Какая ты крупа?">
+	<meta name="og:type" content="website">
+	<meta name="og:locale" content="ru_Ru">
+	<meta name="og:site_name" content="Mem test">
+	<meta name="og:image" content="https://kaktutzhit.by/uploads/tests/b0573c5eaeee421c8b2cbe14d319ba544b193eb7.jpg">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/base.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/btn.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/container.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/content.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/question.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/result.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/variables.css">
+
+	<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
+</head>
+<body>
+	<!-- <div class="container">
+		<div class="content">
+			<div class=""></div>
+		</div>
+	</div> -->
+
+	<div class="container">
+		<div class="content">
+			<div class="question" id="js-question">
+			<div class="question__header">
+				<div class="question__count">
+					<span class="question__number" id="js-questionNumber"></span>/<span id="js-totalQuestionCount"></span>
+				</div>
+				<h2 class="question__text" id="js-questionText"></h2>
+			</div>
+
+				<ul class="question__answers" id="js-questionAnswers"></ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="content">
+			<div class="result -hidden" id="js-result">
+        		<h2 class="result__text" id="js-resultTitle"></h2>
+        		<img src="" id="js-resultImage" class="result__image">
+
+        		<p class="result__description" id="js-resultDescription"></p>
+        		<button class="result__restart" onclick="restartTest()">Пройти заново</button>
+        		<div class="div" id="js-resultShare"></div>
+    		</div>
+    	</div>
+    </div>
+	
+	<script type="text/javascript" src="./assets/scripts/question.js"></script>
+	<script type="text/javascript" src="./assets/scripts/resultData.js"></script>
+	<script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+</html>
