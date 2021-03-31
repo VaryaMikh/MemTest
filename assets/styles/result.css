@@ -16,3 +16,15 @@
 	padding: 20px;
 	margin-top: 30px;
 }
+
+.result__buttons {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.div {
+	height: 100%;
+	margin-left: 40px;
+	margin-top: 25px;
+}

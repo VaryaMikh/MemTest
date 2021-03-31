@@ -18,43 +18,50 @@
 	<link rel="stylesheet" type="text/css" href="./assets/styles/btn.css">
 	<link rel="stylesheet" type="text/css" href="./assets/styles/container.css">
 	<link rel="stylesheet" type="text/css" href="./assets/styles/content.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/gif.css">
 	<link rel="stylesheet" type="text/css" href="./assets/styles/question.css">
 	<link rel="stylesheet" type="text/css" href="./assets/styles/result.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/start.css">
 	<link rel="stylesheet" type="text/css" href="./assets/styles/variables.css">
 
 	<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
 </head>
 <body>
-	<!-- <div class="container">
-		<div class="content">
-			<div class=""></div>
-		</div>
-	</div> -->
-
+	<img src="./assets/img/troll.gif" class="gif__troll">
+	<img src="./assets/img/banan.gif" class="gif__banan">
+	<img src="./assets/img/dog.gif" class="gif__dog">
+	<img src="./assets/img/parrot.gif" class="gif__parrot">
 	<div class="container">
 		<div class="content">
-			<div class="question" id="js-question">
-			<div class="question__header">
-				<div class="question__count">
-					<span class="question__number" id="js-questionNumber"></span>/<span id="js-totalQuestionCount"></span>
-				</div>
-				<h2 class="question__text" id="js-questionText"></h2>
+			<div class="start" id="js-start">
+				<h1 class="start__title">Какой ты мем?</h1>
+				<p class="start__desc">Хочешь узнать, какой ты мем? Нажми на кнопку ниже</p>
+				<div class="start__buttonDiv">
+					<button class="start__button" onclick="startTest()">СТАРТ</button>
+				</div>	
 			</div>
+
+
+			<div class="question -hidden" id="js-question">
+				<div class="question__header">
+					<div class="question__count">
+						<span class="question__number" id="js-questionNumber"></span>/<span id="js-totalQuestionCount"></span>
+					</div>
+					<h2 class="question__text" id="js-questionText"></h2>
+				</div>
 
 				<ul class="question__answers" id="js-questionAnswers"></ul>
 			</div>
-		</div>
-	</div>
 
-	<div class="container">
-		<div class="content">
 			<div class="result -hidden" id="js-result">
         		<h2 class="result__text" id="js-resultTitle"></h2>
         		<img src="" id="js-resultImage" class="result__image">
 
         		<p class="result__description" id="js-resultDescription"></p>
-        		<button class="result__restart" onclick="restartTest()">Пройти заново</button>
-        		<div class="div" id="js-resultShare"></div>
+        		<div class="result__buttons">
+	        		<button class="result__restart" onclick="restartTest()">Пройти заново</button>
+	        		<div class="div" id="js-resultShare"></div>
+        		</div>
     		</div>
     	</div>
     </div>

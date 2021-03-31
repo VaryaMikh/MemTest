@@ -16,9 +16,12 @@ let testScore = 0;
 
 initQuestions();
 
-// function testStart() {
-// 	document.getElementById
-// }
+function startTest() {
+	document.getElementById('js-question').classList.remove('-hidden');
+	document.getElementById('js-start').classList.add('-hidden');
+
+	initQuestions();
+}
 
 function initQuestions() {
 	document.getElementById('js-totalQuestionCount').innerText = questions.length;
@@ -29,6 +32,7 @@ function setNextQuestionData() {
 	document.getElementById('js-questionText').innerText = questions[currentQuestion].questionText;
 	document.getElementById('js-questionNumber').innerText = currentQuestion + 1;
 	document.getElementById('js-questionAnswers').innerHTML = prepareAnswerMarkdown(questions[currentQuestion].answers);
+    document.getElementById('js-questionImg').src = questions[currentQuestion].img;
 }
 
 function prepareAnswerMarkdown(answers) {
@@ -62,14 +66,14 @@ function showTestResults() {
     document.getElementById('js-resultImage').src = resultData[resultKey].image;
     document.getElementById('js-resultShare').innerHTML = VK.Share.button(
             {
-            	url: 'https://solvery.io/',
+            	url: 'https://varyamikh.github.io/MemTest/',
             	title: 'Ничоси! А вы знали, что я ' + resultData[resultKey].title + '? Пройди тест и узнай, какой ты мем.',
             	image: resultData[resultKey].image,
             	noparse: true
             }, 
             {
             	type: 'round_nocount',
-            	text: 'Жмяк'
+            	text: '  Жмяк'
             }
         )
 }
@@ -89,5 +93,5 @@ function restartTest() {
     document.getElementById('js-result').classList.add('-hidden');
     document.getElementById('js-question').classList.remove('-hidden');
     currentQuestion = 0;
-    initQuestions();
+    startTest();
 }

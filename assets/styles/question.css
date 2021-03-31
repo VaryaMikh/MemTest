@@ -40,3 +40,16 @@
 .question__answer:hover {
 	background-color: var(--c-blue-dark)
 }
+
+.question__imgDiv {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.question__img {
+	width: 50%;
+
+	margin-top: 20px;
+}

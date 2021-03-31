@@ -11,9 +11,9 @@ const questions = [
     {
         questionText: 'Какая соц. сеть лучше?',
         answers: [
-            { answerText: 'ТикТок', value: 2 },
-            { answerText: 'Вк', value: 0 },
-            { answerText: 'Инста', value: 1 },
+            { answerText: 'Телеграм', value: 2 },
+            { answerText: 'Вк', value: 1 },
+            { answerText: 'Инста', value: 0 },
             { answerText: 'Ютубчик', value: 3 }
         ]
     },
