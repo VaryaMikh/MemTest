@@ -1,4 +1,4 @@
-# [Mem test](https://varyamikh.github.io/MemTest/)
+
 
 ```
 The project was made while studying here:
